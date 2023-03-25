@@ -1,0 +1,65 @@
+<!-- 1st Var -->
+<script>
+    var y="bhargav";
+    document.write(y + "\n");
+    {
+        var y=543;
+        document.write(y + "\n");
+    }
+    document.write(y + "\n");
+
+//    output:bhargav 543 543 
+</script>
+
+<!-- 2nd Const -->
+<script>
+    const x='hello';
+    document.write(x + "\n");
+    {
+        const x='namaste';
+        document.write(x + "\n");
+    }
+    document.write(x + "\n");
+
+    // output:hello namaste hello
+</script>
+
+
+<!-- 3rd example -->
+<script>
+    const author='bhargav';
+    document.write(author);
+    {
+        let author='sandanala';
+        document.write(author);
+    }
+    document.write(author);
+
+    // output:prints nothing
+</script>
+
+
+<!-- 4th example -->
+<script>
+    const author='bhargav';
+    console.log(author);
+    {
+        var author='bodybuilder';
+        console.log(author);
+    }
+    console.log(author);
+
+// output:Uncaught SyntaxError: Identifier 'author' has already been declared
+</script>
+
+
+<!-- 5th example -->
+<script>
+    const gothamCity;
+    document.write(gothamCity);
+
+    // output:Uncaught SyntaxError: Missing initializer in const declaration
+</script>
+
+
+
