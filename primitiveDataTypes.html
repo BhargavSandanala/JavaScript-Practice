@@ -1,0 +1,71 @@
+<!-- 1st -->
+
+<script>
+    let a=20;
+    let b=true;
+    let c=false;
+    let d=BigInt("543");
+    let e=null;
+    let f=undefined;
+    let g="ROLEX SIR";
+    let H=Symbol("Hello i Am Dilli");
+        h=H.toString();
+   document.write(a+"<br>"+b+"<br>"+c+"<br>"+d+"<br>"+e+"<br>"+f+"<br>"+g+"<br>"+h);
+   document.write("<br/>");
+   document.write("<br/>");
+   document.write(typeof a +"<br/>"+typeof b+"<br/>"+typeof c+"<br/>"+typeof d+"<br/>"+typeof e+"<br/>"+typeof f+"<br/>"+typeof g+"<br/>"+typeof H);
+
+
+// output:20
+//        true
+//        false
+//        543
+//        null
+//        undefined
+//        ROLEX SIR
+//        Symbol(Hello i Am Dilli)
+
+//        boolean
+//        number
+//        bigint
+//        boolean
+//        object
+//        undefined
+//        string
+//        symbol
+</script>
+
+
+<!-- 2nd usage of BigInt with Arthimetic Operators-->
+<script>
+    let x=BigInt("543")+BigInt("7");
+    document.write(x);
+
+    // output:550
+</script>
+
+
+<!-- 3rd using PrimitiveData types as Objects -->
+<script>
+    const powers={
+        "rolex" : true,
+        "dilli" : false,
+        "vikram" : undefined,
+        "amar" : 40,
+        "sandhanam" : BigInt("60")+BigInt("7"),
+       
+    }
+    document.write(typeof powers);
+    document.write("<br/>");
+    document.write(powers["rolex"]+"<br/>"+powers["dilli"]+"<br/>"+powers["vikram"]+"<br/>"+powers["amar"]+"<br/>"+powers.sandhanam);
+
+
+// output:      object
+//              true
+//              false
+//              undefined
+//              40
+//              67(observe how i declared object sandhanam)
+
+</script>
+
