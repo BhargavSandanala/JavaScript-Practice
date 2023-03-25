@@ -62,4 +62,25 @@
 </script>
 
 
+<!-- Example 6 -->
+<script>
+let a = 543;
+console.log(a);
+let a="bhargav";
+console.log(a);
+// output:Uncaught SyntaxError: Identifier 'a' has already been declared
+</script>
+
+<!-- but the same identifier when enclosed in closure produces no Error -->
+<script>
+let a = 543;
+console.log(a);
+{let a="bhargav";
+console.log(a);
+}
+
+// output:543 bhargav
+</script>
+
+
 
