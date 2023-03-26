@@ -1,0 +1,55 @@
+<!-- adding 2 parameters using a function -->
+<script>
+    function addingNumbers(a,b){
+        return a+b;
+    }
+
+    document.write(addingNumbers(20,30));
+    
+</script>
+
+<!-- 1.Arrow Function -->
+<script>
+    //In arrow functions we use const for declaring functions
+    const hello =()=>{
+        document.write("How are you ?");
+        document.write("<br>");
+        return "I'm Good";
+    }
+
+    let x=hello();
+    document.write(x);
+
+</script>
+
+<!-- 2.Arrow Function -->
+<script>
+const multiplyNumbers=(a,b)=>{
+    let c=a*b;
+    return c;
+}
+let x=multiplyNumbers(543,20);
+document.write(x);
+</script>
+
+<!-- 3.Arrow function -->
+<script>
+    const loop=()=>{
+        const powers={
+        "ROLEX" : 100,
+        "DILLI" : 90,
+        "VIKRAM" : 80,
+        "AMAR" : 70,
+        "SANDHANAM" : 60,
+        "ANBU" : 50,
+        "ADAIKALAM" : 40,
+        }
+
+        for(let i in powers){
+            document.write("The Power Of ~"+i+" is "+powers[i]);
+            document.write("<br/>");
+        }
+        
+    }
+    loop();
+</script>
