@@ -1,0 +1,63 @@
+<!-- Increment & Decrement Operator -->
+<script>
+    let a=10;
+    document.write(a++);//actually it is 11 but shows o/p : 10
+    document.write("<br/>");
+    document.write(++a);//o/p:12
+    document.write("<br/>");
+    document.write(a++);//o/p:12 but (13)
+    document.write("<br/>");
+    document.write(++a);//o/p:14
+    document.write("<br/>");
+    document.write(--a);//o/p:13
+    document.write("<br/>");
+    document.write(++a);//o/p:14
+    document.write("<br/>");
+    document.write(a--);//o/p:14 but (13)
+    document.write("<br/>");
+    document.write(a++);//o/p:13 but (14)
+    document.write("<br/>");
+    document.write(--a);//o/p:13
+
+    // output: 
+    //         10
+    //         12
+    //         12
+    //         14
+    //         13
+    //         14
+    //         14
+    //         13
+    //         13
+</script>
+
+<!-- Comparison operator -->
+<script>
+    let comp1=25;
+    let comp2="25";
+    document.write(comp1 == comp2);
+    document.write("<br/>");
+    document.write(comp1 != comp2);
+    document.write("<br/>");
+    document.write(comp1 === comp2);
+    document.write("<br/>");
+    document.write(comp1 !== comp2);
+
+    // output:
+    //         true
+    //         false
+    //         false
+    //         true
+
+</script>
+
+
+<!-- Ternary Operator -->
+<script>
+    let age=prompt("What's Your Age ?");
+    document.write("You can",((age-8)<18?" not Drive" : " Drive"));
+</script>
+
+
+
+
