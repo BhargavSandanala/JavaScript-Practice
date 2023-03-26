@@ -1,0 +1,104 @@
+<!-- Length Property -->
+<script>
+    let name="ROLEX";
+    document.write(name.length);
+
+    // output: 5
+</script>
+
+
+<!-- String Interpolation : Means inserting variables inside Template Literals($``)-->
+<script>
+    const name=prompt("Enter Your Name!");
+    let a=`Your name is ${name}`;
+    document.write(a);
+</script>
+
+
+<!-- toUpperCase Property -->
+<script>
+    let name=prompt("enter Your Name!");
+    document.write("Your Entered Name will be displayed in Upper Case now "+name.toUpperCase());
+</script>
+
+
+<!-- Slice Property -->
+<script>
+    let name="DILLI";
+    let v=name.slice(2,4); //means from 2 to 4 and 4 is not included
+    document.write(v);
+</script>
+
+
+<!-- Slice Property 2 -->
+<script>
+    let name="BHARGAV SANDANALA";
+    let slicedName=name.slice(8,17);
+    document.write(slicedName);
+
+    // output:SANDANALA
+</script>
+
+
+<!-- Replace Property -->
+<script>
+    let agents="Dilli Amar";
+    let boss=agents.replace("Amar","Bejoy");
+    document.write(boss);
+
+    // output:Dilli Bejoy
+</script>
+
+
+<!-- Concat Property -->
+<script>
+    let agent1="DILLI";
+    let agent2="AMAR";
+
+    let joinedHands=agent1.concat(" teamed with ",agent2," For real !!");
+    document.write(joinedHands);
+
+    // output:DILLI teamed with AMAR For real !!
+</script>
+
+
+<!-- Trim Property ~ Trims End spaces-->
+<script>
+    let pow="   LASERSIGHT   ";
+    document.write(pow.trim());
+
+    // output:LASERSIGHT
+</script>
+
+
+<!-- Includes Property -->
+<script>
+    let name="Hello World this Robo memory 1 Gigabyte Speed 1 TerraByte";
+    let testing=name.includes("Gigabyte");//if you give gigabyte then o/p will be False
+    document.write(testing);
+
+    // output:True
+
+</script>
+
+
+
+<!-- startsWith Property -->
+<script>
+     let name="Hello World this Robo memory 1 Gigabyte Speed 1 ZetaByte";
+     let result=name.startsWith("ZetaByte",48);
+     document.write(result);
+
+    // output:true
+</script>
+
+
+
+<!-- endsWith Property -->
+<script>
+    let name="Hello World this Robo memory 1 Gigabyte Speed 1 ZetaByte";
+    let result=name.endsWith("ZetaByte",56);//although it's ending with corrsponding 55 int but we have to specify it as 56 bcz at the end there's a  string terminator which is present (/0);
+    document.write(result);
+
+    // output:true
+</script>
