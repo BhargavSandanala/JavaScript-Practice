@@ -1,0 +1,81 @@
+<!-- if else -->
+<script>
+    var emoji = String.fromCodePoint(0x1F923);
+    let colour=prompt("What is Your Favourite Colour ?");
+    if(colour!=="black"){
+        document.write("ugly colour"+ emoji);
+    }else{
+        document.write("Superb Colour"+ String.fromCodePoint(0x1F929));//you can also write like this
+    }
+    
+</script>
+
+
+
+<!-- Switch Case -->
+<script>
+    let fruits=prompt("Enter your favourite Fruits Name !!");
+    switch(fruits){
+        case "mangoes" : document.write("They are Yellow in Colour!");
+        break;
+        
+        case "watermelon" : document.write("They are Red in Colour!");
+        break;
+
+        case "litchi" : document.write("They are White in Colour");
+        break;
+
+        default : document.write("Please Enter Valid Fruit Name");
+    }
+
+</script>
+
+<!-- Sum of first n Natural Numbers -->
+<script>
+    let sum=0;
+    let n=prompt("Enter the value of "+"n");
+    for(let i=0;i<n;i++){
+        sum+=(i+1);
+    }
+    document.write("The sum of first "+n+" natural number is : "+sum);
+
+</script>
+
+
+<!-- for in loop -->
+<script>
+    let marks={
+        "ROLEX" : 100,
+        "DILLI" : 90,
+        "VIKRAM" : 80,
+        "AMAR" : 70,
+        "SANDHANAM" : 60,
+        "ANBU" : 50,
+        "ADAIKALAM" : 40
+    }
+    for(let a in marks){
+        document.write("The Total Marks of "+a+" is : "+marks[a]);
+        document.write("<br/>")
+    }
+</script>
+
+<!-- for of  -->
+<script>
+    for(let x of "AMARENDRA BAHUBALI"){
+        document.write(x);
+        document.write("<br/>");
+    }
+</script>
+
+
+<!-- while loop -->
+<script>
+    let i=0;
+    while(i<20){
+        document.write("I"+String.fromCodePoint(0x1F47D)+"U");
+        document.write("<br/>");
+        i++;
+    }
+</script>
+
+
