@@ -1,0 +1,111 @@
+<!-- 1st nrml Array prgrm -->
+<script>
+        let fruits=["oranges","apples","pineapples","mangoes","grapes"];
+        document.write(fruits[3]);
+    </script>
+
+
+<!-- 2nd Finding Length of the Array -->
+<script>
+        let ninjaStorm=["YellowRanger","RedRanger","BlueRanger","GreenRanger","WhiteRanger"];
+        document.write(ninjaStorm.length);
+
+        // output: 5
+    </script>
+
+
+<!-- 3rd Array calling with Arrow function-->
+<script>
+    let actress=["pam","nidhi agrawal","tamanna","dimple hayati","sreeleela"];
+    const arrowFunc=()=>{
+        document.write(actress[4]);
+    }
+    arrowFunc();
+
+    // output:sreeleela
+</script>
+
+
+<!-- 3.1 changing an Arrays element in Arrow func -->
+<script>
+    let actress=["pam","nidhi agrawal","tamanna","dimple hayati","sreeleela"];
+
+    for(let i in actress){
+    document.write(actress[i]);
+    document.write("<br/>");
+}
+
+    const arrowFunc=()=>{
+        document.write("<br/>");
+        document.write("Newly Created Array : <br/>");
+        actress[0]="ramya Nambeesan";
+        for(let i in actress){
+        document.write(actress[i]+"<br/>");
+    }
+}
+arrowFunc();
+
+// output: pam
+//         nidhi agrawal
+//         tamanna
+//         dimple hayati
+//         sreeleela
+
+//         Newly Created Array :
+//         ramya Nambeesan
+//         nidhi agrawal
+//         tamanna
+//         dimple hayati
+//         sreeleela
+</script>
+
+
+<!-- 4th changing Elements in Arrays with enhanced for loop-->
+<script>
+     let ninjaStorm=["YellowRanger","RedRanger","BlueRanger","GreenRanger","WhiteRanger"];
+     ninjaStorm[3]="BlackRanger";
+     document.write("This is the newly added Element into our Array List : "+ninjaStorm[3]);
+     document.write("<br/>");
+     document.write("<br/>");
+
+
+for(let i in ninjaStorm){
+    document.write(ninjaStorm[i]);
+    document.write("<br/>");
+}
+
+// output: This is the newly added Element into our Array List : BlackRanger
+
+//         YellowRanger
+//         RedRanger
+//         BlueRanger
+//         BlackRanger
+//         WhiteRanger
+</script>
+
+
+<!-- 4.1 changing Elements in Arrays but with normal for loop -->
+<script>
+    let ninjaStorm=["YellowRanger","RedRanger","BlueRanger","GreenRanger","WhiteRanger"];
+
+    for(let i=0;i<ninjaStorm.length;i++){
+        document.write(ninjaStorm[i]+"<br/>");
+    }
+
+// output:YellowRanger
+//        RedRanger
+//        BlueRanger
+//        GreenRanger
+//        WhiteRanger
+</script>
+
+
+<!-- in Js Arrays are objects -->
+<script>
+    let success=["hardwork","smartwork","hope","resilience","positive attitude"];
+    document.write(typeof success);
+
+    // output:object
+</script>
+
+
