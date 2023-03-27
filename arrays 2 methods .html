@@ -1,0 +1,204 @@
+<!-- to string Converts an array to a string of comma seperated values-->
+<script>
+    let array=[5,4,3];
+    document.write(array.toString());
+
+ // output:5,4,3
+</script>
+
+
+<!-- join -->
+<script>
+    let array=[5,4,3];
+    document.write(array.join(String.fromCodePoint(0x1F60B)));
+
+    // output:5😋4😋3
+</script>
+
+
+<!-- pop : pops the last element and also modifies the array-->
+<script>
+    let n=[1,43,76,89,56,49,32];
+    document.write("This is the poped element : "+n.pop());
+    document.write("<br/>");
+    document.write("<br/>");
+
+    let x=n.toString();
+    document.write("This is the new array : ");
+    for(let i in x){
+        document.write(x[i]);
+    }
+
+    // output:This is the poped element : 32
+
+    //        This is the new array : 1,43,76,89,56,49
+</script>
+
+
+<!-- push with join -->
+<script>
+    let n=[1,2,3,4];
+    n.push("5");
+    
+    let x=n.join("~");
+    
+    for(let i in x){
+        
+        document.write(x[i]);
+    }
+
+    // output:1~2~3~4~5
+</script>
+
+
+<!-- shift : pops the first element & modifies the array-->
+<script>
+    let n=[1,2,3,4,5];
+   document.write(n.shift());
+   document.write("<br/>");
+   document.write("<br/> The following is the Modified Array :");
+
+   for(let i in n){
+    document.write("<br/>");
+    document.write(n[i]);
+   }
+
+// output: 1
+
+//         The following is the Modified Array :
+//         2
+//         3
+//         4
+//         5
+</script>
+
+
+<!-- unshift : adds an element to the starting position-->
+<script>
+      let n=[1,2,3,4,5];
+      document.write(n.unshift("7"));//here it is printing the array length which is 6
+      document.write("<br/>");
+      document.write("This is the new Array : <br/>");
+      for(let i in n){
+        document.write(n[i]+"<br/>");
+      }
+
+// output:     6
+//             This is the new Array :
+//             7
+//             1
+//             2
+//             3
+//             4
+//             5
+</script>
+
+
+
+<!-- delete : returns a bool value after deleting a element and modifies the array-->
+<script>
+    let nos=[1,2,3,4,5];
+    let ans=delete nos[0];
+    document.write(ans);
+    for(let i in nos){
+        document.write("<br/>"+nos[i]);
+    }
+
+</script>
+
+
+
+<!-- concat : used to join arrays to the given array-->
+<script>
+    let a1=[1,2,3];
+    let a2=[4,5,6];
+    let a3=[7,8,9];
+
+    document.write(a1.concat(a2,a3));
+
+ // output:1,2,3,4,5,6,7,8,9
+</script>
+
+
+<!-- 1.sort : actually its not sorting in descending order-->
+<!-- instead it sorts in alphabetical order like a=1,b=2,c-3 etc -->
+<script>
+    let nos=[5,9,11,56,29,0,7];
+    let newArray=nos.sort();
+    document.write(newArray);
+
+    // output=0,11,29,5,56,7,9//^notice the output here^ 
+</script>
+
+
+<!-- 1.2 Sort : The following function will print in Descending Order -->
+<script>
+    let compare=(a,b)=>{
+        return a-b;
+    }
+
+    let num=[22,33,56,78,96,45,43];
+    num.sort(compare);
+    document.write(num);
+
+
+// output:22,33,43,45,56,78,96
+</script>
+
+
+
+<!-- 1.3 Sort : Now the same above example in Ascending Order -->
+<script>
+    let compare=(a,b)=>{
+        return b-a;
+    }
+
+    let num=[22,33,56,78,96,45,43];
+    num.sort(compare);
+    document.write(num);
+
+// output:96,78,56,45,43,33,22
+</script>
+
+
+<!-- reverse : This would print the modified(reversed) version of our Source Array -->
+<script>
+    let array=[22,76,54,39,90];
+    let revArray=array.reverse();
+    document.write(revArray);
+
+    // output:90,39,54,76,22
+</script>
+
+
+
+<!-- 1.splice : deletes and also adds the element into our array simultaneously-->
+<script>
+    let array=[1,2,3,4,5];
+    array.splice(2,2,6,7);
+    document.write(array);
+
+    // output:1,2,6,7,5
+</script>
+
+
+<!--  1.slice -->
+<script>
+    const num=[1,2,3,4,5];
+    let ans= num.slice(1,5);
+    document.write(ans);
+
+    // output:2,3,4,5
+</script>
+
+
+<!-- 1.2.slice -->
+<script>
+    let array=[22,34,56,9,90];
+    let newArray=array.slice(0,5);
+    document.write(newArray);
+
+    // output:22,34,56,9,90
+</script>
+
+
