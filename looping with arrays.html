@@ -1,0 +1,178 @@
+<!-- forEach loop -->
+<script>
+    let num =[1,2,3,4,5];
+
+    num.forEach((element) => {
+        document.write(element * element+",");
+    });
+
+
+    // output:1,4,9,16,25,
+</script>
+
+
+
+<!-- 1.2 forEach -->
+<script>
+     let num =[1,2,3,4,5];
+
+     num.forEach((int)=>{
+      document.write(int/int);
+     });
+
+    //  output:11111
+
+</script>
+
+
+
+<!-- Array from -->
+<script>
+    let name="ROLEX";
+    let arr=Array.from(name);
+    document.write(arr);
+
+    // output:R,O,L,E,X
+</script>
+
+
+
+<!-- 1.2 Array from : used to convert a string into Array format-->
+<script>
+    let name="BHARGAV SANDANALA";
+     
+    let newArr=Array.from(name);
+    document.write(newArr);
+
+    // output:B,H,A,R,G,A,V, ,S,A,N,D,A,N,A,L,A
+</script>
+
+
+
+<!-- for of -->
+<script>
+    let num=[1,2,3,4,5,6,7,8,9];
+    for(let i of num){
+        document.write(i);
+    }
+
+    // output:123456789
+</script>
+
+
+
+<!-- for in -->
+<script>
+    let num=[11,45,67,890,34,56,3];
+    for(let i in num){
+        document.write(num[i]);
+    }
+
+
+// output:11456789034563
+</script>
+
+
+<!-- map() -->
+<script>
+    let arr=[1,2,3];
+    let a=arr.map((value,index,array)=>{
+        document.write(value+"\t"+index+"\t"+array+"<br/>");
+        return value*value;
+    });
+
+    document.write(a);
+
+
+    // output: v i a[  ]
+    //         1 0 1,2,3
+    //         2 1 1,2,3
+    //         3 2 1,2,3
+    //         1,4,9 //value*value
+</script>
+
+
+
+<!-- 1.2 map() -->
+<script>
+    let array=[11,22,33,44,55];
+    array.map((element,index,array)=>{
+        document.write(element*element+"\t"+index+"\t"+"["+array+"]"+"<br/>");
+    });
+
+
+    // output:
+    //         121 0 [11,22,33,44,55]
+    //         484 1 [11,22,33,44,55]
+    //         1089 2 [11,22,33,44,55]
+    //         1936 3 [11,22,33,44,55]
+    //         3025 4 [11,22,33,44,55]
+</script>
+
+
+
+<!-- filter : filters a value that passes the test and returns it to the user-->
+<script>
+let array=[11,22,33,44,55];
+let result=array.filter((element)=>{
+    return element>30;
+});
+document.write(result);
+
+// output:33,44,55
+</script>
+
+
+
+<!-- filter 1.2 -->
+<script>
+    let array=[43,56,44,10,1,45,42,36];
+    let filteredResult=array.filter((value)=>{
+        return value % 2 == 0;
+    });
+document.write("["+filteredResult+"]");
+
+// output:[56,44,10,42,36]
+</script>
+
+
+
+
+<!-- reduce : reduces an array to a single value-->
+<script>
+let array=[1,2,3,5,2,1];
+let reducedArray=array.reduce((e1,e2)=>{
+     return e1+e2;
+});
+
+document.write(reducedArray);
+
+// output:14
+</script>
+
+
+<!-- rdeuced array 1.2 -->
+<script>
+    let array=[10,20,30,40,50];
+   let result= array.reduce((element1,element2)=>{
+        return element1+element2;
+    });
+
+    document.write(result*2);
+
+    // output:300
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
