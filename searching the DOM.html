@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+   
+      
+</head>
+<body>
+    
+
+    <!-- changing the span elements using getElementsByClassName and for loop -->
+    <span class="mySpan">Hello World</span>
+    <br>
+    <span class="mySpan">This is Dom Manipulation in Js </span>
+    <script>
+        let mySpan=document.getElementsByClassName("mySpan");
+     for(let i=0;i<mySpan.length;i++){
+       mySpan[i].style.color="red";
+     }
+    </script>
+
+
+    <!-- changing the inner html content and color using getElementsByClassName -->
+    <div class="div">Who is the Ultimatum in Entire LCU Franchise ?</div>
+    <div class="div">Who had been Jailed for 10years ?</div>
+    <script>
+        let div1=document.getElementsByClassName("div")[0];
+        div1.style.color="red";
+        div1.innerHTML="ROLEX_SIR !!!";
+
+        let div2=document.getElementsByClassName("div")[1];
+        div2.style.color="blue";
+        div2.innerHTML="DiLLi";
+    </script>
+
+
+    <!-- using querySelectorAll -->
+    <div class="div1">SUPERMAN</div>
+    <div class="div1">BATMAN</div>
+    <script>
+        let divs=document.querySelectorAll(".div1");//Note for class you have to use (.)while query selecting
+        divs[0].style.color="red";
+        divs[1].style.color="green";
+    </script>
+
+
+
+    <!-- using getElementById -->
+    <div id="div1">I dont want to hate Js</div>
+    <div id="div2">I want to love it</div>
+    <script>
+        let div1=document.getElementById("div1");
+        div1.style.color="green";
+        let div2=document.getElementById("div2");
+        div2.style.color="orange";
+    </script>
+
+
+    <!-- using query selector all-->
+    <div id="div1">I dont want to hate Js</div>
+
+    <script>
+        let divs=document.querySelectorAll("#div1");//Note for class you have to use (#)while query selecting
+        divs[0].style.color="cyan";
+    </script>
+
+
+    
+
+    <!-- using getElementsByName -->
+    <div class="div1" name="SuperHero">SUPERMAN</div>
+    <div class="div1" name="SuperHero">BATMAN</div>
+    <script>
+        let name1=document.getElementsByName("SuperHero")[0];
+        name1.style.color="red";
+        let name2=document.getElementsByName("SuperHero")[1];
+        name2.style.color="green";
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+    
+
+
