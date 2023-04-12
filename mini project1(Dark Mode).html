@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    
+    <title>Dark Mode ~ Light Mode project</title>
+    <style>
+        .section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:auto;
+        }
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto; 
+             height: 100vh;
+        }
+        
+        .container :nth-child(2){
+            margin:2vh;
+        }
+        #countDisplay{
+            visibility: hidden;
+        }
+        </style>
+
+</head>
+<body>
+    <div class="section">
+
+        <div class="container">
+            <button type="button" class="btn btn-outline-primary" id="light" >Light</button>
+            <button type="button" class="btn btn-outline-secondary" id="dark" >Dark</button>
+            <div id="countDisplay"></div>
+        </div>
+    </div>
+    
+    
+   
+    
+    <script>
+        const dark=document.getElementById("dark");
+        const light=document.getElementById("light");
+        const countDisplay=document.getElementById("countDisplay");
+        let count=0;
+
+
+        dark.addEventListener("click",()=>{
+            console.log(count++);
+            document.body.style.background="black";
+            displayCount();
+        });
+
+
+        light.addEventListener("click",()=>{
+            console.log(count--);
+            document.body.style.background="white";
+            displayCount();
+        });
+
+
+
+        function displayCount(){
+        countDisplay.innerText=count; 
+        };
+
+        displayCount();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
