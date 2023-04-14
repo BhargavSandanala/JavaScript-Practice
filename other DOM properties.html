@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other DOM properties</title>
+</head>
+<body>
+
+    <p id="rolex">HELLO ROLEX SIR!</p>
+        <span id="sir" hidden>I am DrugLord</span>
+        <script>
+            console.log(document.body.firstChild);
+            console.log(document.body.firstChild.data);
+            console.log(document.body.firstChild.nodeValue);
+            console.log(document.body.textContent);
+        </script>
+
+
+        
+    <!-- Using getAttribute -->
+    <div id="first" class="one">ROCKY</div>
+    <script>
+        let a=first.getAttribute("class");
+        console.log(a);
+        console.log(first.hasAttribute("class"));
+       
+    </script>
+
+
+    <!-- Using Set Attribute -->
+    <div id="first">RAMBO</div>
+    <script>
+         console.log(first.setAttribute("class","rolex dilli"));
+         console.log(first.getAttribute("class"));
+
+
+        //  output:undefined
+        //         rolex dilli
+    </script>
+
+
+
+
+    <!-- Using Remove Attribute -->
+    <div id="game"></div>
+    <script>
+        console.log(game.setAttribute("class","football rugby"));
+        console.log(game.getAttribute("class"));
+        console.log(game.removeAttribute("class"));
+
+        // output:undefined
+        //        football rugby
+        //        undefined
+    </script>
+
+
+
+
+    <!-- using element.attribute -->
+    <div id="ok">Hello</div>
+    <script>
+        console.log(ok.attributes);
+
+        // output:NamedNodeMap {0: id, id: id, length: 1}
+    </script>
+    
+
+
+
+
+
+</body> 
+</html>
