@@ -1,0 +1,47 @@
+<script>
+let userName = "Seigel & Sushter";
+console.log(userName?`Hello this is ${userName} the creators of first Dc characters !\n` : "Hello! \n");
+let userQuestion = "Let's see which DC Character resembles you : ";
+console.log(`${userName} asked ${userQuestion}\n `);
+let randomNumber = Math.floor(Math.random() * 8);
+let eightBall = " ";
+switch(randomNumber){
+  case 0 : eightBall = 'SUPERMAN';
+           console.log(eightBall + String.fromCodePoint(0x1F9B8));
+  break;
+
+  case 1 : eightBall = 'BATMAN';
+           console.log(eightBall + String.fromCodePoint(0x1F9B9	));
+  break;
+
+  case 2 : eightBall = 'AQUAMAN';
+          console.log(eightBall + String.fromCodePoint(0x1F9DC));
+  break;
+
+  case 3 : eightBall = 'JOKER';
+           console.log(eightBall + String.fromCodePoint(0x1F0CF	));
+  break;
+
+  case 4 : eightBall = 'FLASH';
+           console.log(eightBall + String.fromCodePoint(0x26A1));
+  break;
+
+  case 5 : eightBall = 'WONDER WOMAN';
+           console.log(eightBall + String.fromCodePoint(0x1F9B9));
+  break;
+
+  case 6 : eightBall = 'BLACK ADAM';
+           console.log(eightBall + String.fromCodePoint(0x1F9DB));
+  break;
+
+  case 7 : eightBall = 'GREEN LANTERN';
+          console.log(eightBall + String.fromCodePoint(0x1F9DA));
+  break;
+
+  case 8 : eightBall = 'CATWOMAN';
+          console.log(eightBall + String.fromCodePoint(0x1F9DD));
+  break;
+}
+
+console.log("\n \n created by Bhargav Sandanala"+ String.fromCodePoint(0x1F601)+String.fromCodePoint(0x1F91F));
+</script>
