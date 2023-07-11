@@ -1,0 +1,186 @@
+<script>
+    / 1.
+Combining 2 arrays
+ let arr1 = [1,2,3,4,5];
+ let arr2 = [6,7,8,9,10];
+ let combinedArray = [...arr1,...arr2];
+ console.log(combinedArray);
+
+2.
+reversing an Array 
+ let arr1 = [1,2,3,4,5];
+ let ans = arr1.reverse();
+ console.log(ans);
+
+
+3.
+Finding out duplicate elements in an array
+ let findingDarray = (array) =>{
+     return array.filter((value,index)=>array.indexOf(value) !== index);
+ }
+
+ let arr1 =  [1, 2, 3, 4, 5, 2, 7, 8, 2, 10, 1,20,20,40,90,90];
+ let ans = findingDarray(arr1);
+
+
+
+4.
+Splicing an Array
+ let arr = ["apples","mangoes","grapes","tomatoes"];
+ arr.splice(0,0,"litchi");
+ console.log(arr[0]);
+
+
+4.1
+Splicing
+ let arr = [1,2,3,4,5,6];
+ let ans = arr.splice(0,1,0);
+ console.log(ans);
+This is an output based question the answer would be [1];
+
+
+
+4.2
+Splicing
+ let arr2 = [7,8,9,10];
+ arr2.splice(0,2,6);
+ for(let i in arr2){
+     console.log(arr2[i]);
+ }
+
+
+
+
+Slicing
+5
+ let str = "bbhargav";
+ console.log(str.slice(1,8));
+
+
+5.1
+ let str1 = "DILLIROLEX";
+ console.log(str1.slice(5,10));
+
+
+5.2
+ let str = "ANBUSANTHANAM";
+ console.log(str.slice(4,13));
+
+
+
+forEach 
+6
+ let arr = [1,2,3,4,5];
+ arr.forEach((el)=>{
+     console.log( el*el );
+ });
+
+
+
+6.1
+ let arr1 = [6,7,8,9,10] ;
+ arr1.forEach((el)=>{
+     console.log(el>7);
+ });
+ output:
+ false
+ false
+ true
+ true
+ true
+
+
+
+6.2
+ let arr1 = [6,7,8,9,10];
+ arr1.forEach((el) => {
+     console.log(el / 2);
+ });
+ output:
+ 3
+ 3.5
+ 4
+ 4.5
+ 5
+
+
+
+6.3
+ let array = [20,34,56,78,96];
+ array.forEach((el)=>{
+     console.log(el * el);
+ });
+ output:
+ 400
+ 1156
+ 3136
+ 6084
+ 9216
+
+
+
+7
+Map method
+ let array = [20,34,56,78,96];
+ array.map((val)=>{
+     console.log(val > 40);
+ });
+ output:
+ false
+ false
+ true
+ true
+ true
+
+
+7.1
+ let array = [20,34,56,78,96];
+ array.map((el)=>{
+     console.log(el / 2 );
+ });
+ output:
+ 10
+ 17
+ 28
+ 39
+ 48
+
+
+
+
+8
+Filter Method
+ let array = [20,34,56,78,96];
+ array.filter((el)=>{
+     console.log(el > 50);
+ });
+ output:
+ false
+ false
+ true
+ true
+ true
+
+
+
+8.1
+to get the values instead of booolean:-
+ let array = [20,34,56,78,96];
+ let result = array.filter((el)=>{
+     return el > 50 ;
+ });
+ console.log(result);
+ output:
+ [ 56, 78, 96 ]
+
+
+
+8.2
+ let array = [20,34,56,78,96];
+ let res = array.filter((el)=>{
+     return el >= 30 ;
+ });
+ console.log(res);
+ output:
+ [ 34, 56, 78, 96 ]
+</script>
